@@ -7,6 +7,5 @@ import lombok.*;
 @Data
 public class Product {
     private String productNumber;
-    private int quantity;
     private double price;
 }
