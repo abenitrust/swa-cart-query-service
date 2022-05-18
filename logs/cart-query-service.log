@@ -1,0 +1,565 @@
+2022-05-18 00:23:44,284 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2022-05-18 00:23:45,096 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8003
+2022-05-18 00:23:45,970 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [main] Located environment: name=shopping-cart-query-service, profiles=[default], label=null, version=6beebd0254f32a276770508abbeae0daef39cce7, state=null
+2022-05-18 00:23:45,972 INFO org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/abenitrust/swa_config/shopping-cart-query-service.yml'}]
+2022-05-18 00:23:45,998 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-05-18 00:23:46,512 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-18 00:23:46,566 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 51ms. Found 1 MongoDB repository interfaces.
+2022-05-18 00:23:46,863 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=a11ed8e6-b174-3757-88a7-1cc4709282cc
+2022-05-18 00:23:47,625 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8008 (http)
+2022-05-18 00:23:47,634 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8008"]
+2022-05-18 00:23:47,635 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-05-18 00:23:47,636 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-05-18 00:23:47,759 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-05-18 00:23:47,759 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1749 ms
+2022-05-18 00:23:48,228 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27010], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-18 00:23:48,279 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='628482e4cfbc13312f72aadf', description='null'}-localhost:27010] Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27010
+2022-05-18 00:23:48,289 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='628482e4cfbc13312f72aadf', description='null'}-localhost:27010] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27010, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5288200}
+2022-05-18 00:23:48,337 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-18 00:23:48,427 WARN org.springframework.data.convert.CustomConversions [main] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-18 00:23:48,594 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2022-05-18 00:23:48,595 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-18 00:23:48,599 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2022-05-18 00:23:48,600 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-18 00:23:48,957 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-18 00:23:50,237 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses Jersey
+2022-05-18 00:23:50,702 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [main] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-05-18 00:23:51,453 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-05-18 00:23:51,524 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-05-18 00:23:51,655 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-05-18 00:23:51,656 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-05-18 00:23:51,790 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-05-18 00:23:51,791 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-05-18 00:23:51,913 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-05-18 00:23:52,216 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-05-18 00:23:52,217 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-05-18 00:23:52,217 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-05-18 00:23:52,218 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-05-18 00:23:52,218 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-05-18 00:23:52,219 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-05-18 00:23:52,220 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-05-18 00:23:52,302 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-05-18 00:23:52,305 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-05-18 00:23:52,308 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-18 00:23:52,312 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1652851432311 with initial instances count: 6
+2022-05-18 00:23:52,323 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application SHOPPING-CART-QUERY-SERVICE with eureka with status UP
+2022-05-18 00:23:52,324 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1652851432324, current=UP, previous=STARTING]
+2022-05-18 00:23:52,327 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING-CART-QUERY-SERVICE/DESKTOP-4JQFJ2O.mshome.net:shopping-cart-query-service:8008: registering service...
+2022-05-18 00:23:52,360 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = query
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2022-05-18 00:23:52,369 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING-CART-QUERY-SERVICE/DESKTOP-4JQFJ2O.mshome.net:shopping-cart-query-service:8008 - registration status: 204
+2022-05-18 00:23:52,429 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.5.1
+2022-05-18 00:23:52,429 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 0efa8fb0f4c73d92
+2022-05-18 00:23:52,430 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1652851432427
+2022-05-18 00:23:52,435 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-query-1, groupId=query] Subscribed to topic(s): CART-UPDATED
+2022-05-18 00:23:52,438 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2022-05-18 00:23:52,444 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = query
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2022-05-18 00:23:52,460 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.5.1
+2022-05-18 00:23:52,460 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 0efa8fb0f4c73d92
+2022-05-18 00:23:52,461 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1652851432460
+2022-05-18 00:23:52,462 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-query-2, groupId=query] Subscribed to topic(s): CART-CREATED
+2022-05-18 00:23:52,463 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2022-05-18 00:23:52,467 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = query
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2022-05-18 00:23:52,481 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.5.1
+2022-05-18 00:23:52,482 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 0efa8fb0f4c73d92
+2022-05-18 00:23:52,483 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1652851432481
+2022-05-18 00:23:52,484 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-query-3, groupId=query] Subscribed to topic(s): CART-DELETED
+2022-05-18 00:23:52,485 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2022-05-18 00:23:52,489 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8008"]
+2022-05-18 00:23:52,505 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8008 (http) with context path ''
+2022-05-18 00:23:52,506 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8008
+2022-05-18 00:23:52,670 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Cluster ID: yVtTKKF1T0OFDZLLqn20jg
+2022-05-18 00:23:52,670 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Cluster ID: yVtTKKF1T0OFDZLLqn20jg
+2022-05-18 00:23:52,670 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Cluster ID: yVtTKKF1T0OFDZLLqn20jg
+2022-05-18 00:23:52,672 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2022-05-18 00:23:52,672 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2022-05-18 00:23:52,672 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2022-05-18 00:23:52,678 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,678 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,678 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,692 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2022-05-18 00:23:52,693 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2022-05-18 00:23:52,693 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2022-05-18 00:23:52,693 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,694 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,695 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] (Re-)joining group
+2022-05-18 00:23:52,706 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Finished assignment for group at generation 23: {consumer-query-1-5f0e81a9-2b76-4268-b06d-f8312c403128=Assignment(partitions=[CART-UPDATED-0]), consumer-query-3-be0d8942-513d-415a-b3d8-3ed35fbf34d2=Assignment(partitions=[CART-DELETED-0]), consumer-query-2-7da57754-5384-4f5f-a0e2-7bbf9f7f8e15=Assignment(partitions=[CART-CREATED-0])}
+2022-05-18 00:23:52,714 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$2 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Successfully joined group with generation 23
+2022-05-18 00:23:52,714 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$2 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Successfully joined group with generation 23
+2022-05-18 00:23:52,714 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$2 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Successfully joined group with generation 23
+2022-05-18 00:23:52,719 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Adding newly assigned partitions: CART-DELETED-0
+2022-05-18 00:23:52,719 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Adding newly assigned partitions: CART-CREATED-0
+2022-05-18 00:23:52,719 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Adding newly assigned partitions: CART-UPDATED-0
+2022-05-18 00:23:52,732 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Setting offset for partition CART-CREATED-0 to the committed offset FetchPosition{offset=17, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2022-05-18 00:23:52,732 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Setting offset for partition CART-DELETED-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2022-05-18 00:23:52,732 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Setting offset for partition CART-UPDATED-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2022-05-18 00:23:52,735 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] query: partitions assigned: [CART-DELETED-0]
+2022-05-18 00:23:52,735 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] query: partitions assigned: [CART-UPDATED-0]
+2022-05-18 00:23:52,735 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] query: partitions assigned: [CART-CREATED-0]
+2022-05-18 00:23:52,939 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 9.569 seconds (JVM running for 10.014)
+2022-05-18 00:28:52,231 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:32:55,248 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=string, cartLines=null)
+2022-05-18 00:32:55,370 INFO com.mongodb.diagnostics.logging.SLF4JLogger [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Opened connection [connectionId{localValue:2, serverValue:21}] to localhost:27010
+2022-05-18 00:33:30,430 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:33:32,061 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8008-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-18 00:33:32,062 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8008-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-18 00:33:32,084 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8008-exec-1] Completed initialization in 21 ms
+2022-05-18 00:33:32,117 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 00:33:48,000 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:33:52,235 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:33:52,876 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:33:54,540 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 00:34:28,067 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:36:06,936 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:36:06,947 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 00:36:06,986 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:36:07,014 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:36:07,018 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 00:36:07,046 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:36:33,580 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:36:33,601 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 00:36:33,636 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:36:33,656 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:36:33,659 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 00:36:33,679 INFO com.mongodb.diagnostics.logging.SLF4JLogger [http-nio-8008-exec-7] Opened connection [connectionId{localValue:3, serverValue:22}] to localhost:27010
+2022-05-18 00:36:33,704 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:36:36,804 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:37:25,918 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 00:38:52,297 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:38:56,971 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:38:56,978 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 00:38:57,015 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:38:57,039 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:38:57,039 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 00:38:57,064 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:39:12,767 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:39:46,108 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:39:46,127 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 00:39:46,169 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:39:46,199 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:39:46,203 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 00:39:46,239 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:39:46,257 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:39:48,276 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 00:39:54,287 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:41:48,280 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:41:48,287 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 00:41:48,317 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:41:48,340 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:41:48,343 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 00:41:48,366 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:41:48,384 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:41:50,413 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 00:41:56,191 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:43:52,309 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:45:23,044 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:45:23,049 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 00:45:23,083 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:45:23,105 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:45:23,108 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 00:45:23,132 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:45:23,149 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:45:25,179 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 00:45:25,264 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:23,095 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:48:23,103 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 00:48:23,137 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:23,158 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:48:23,163 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 00:48:23,186 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:23,206 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:25,221 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 00:48:25,282 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:48,863 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:48:48,868 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 00:48:48,896 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:48,915 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:48:48,918 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 00:48:48,938 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:48,956 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:50,976 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-10] GET request for /carts/0001
+2022-05-18 00:48:51,041 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:48:52,310 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:51:22,692 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:51:22,702 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 00:51:22,746 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:51:22,773 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:51:22,777 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 00:51:22,815 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:51:22,840 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:51:24,860 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 00:51:24,929 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:52:20,581 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:52:20,587 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 00:52:20,614 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:52:20,631 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:52:20,634 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 00:52:20,655 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:52:20,672 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:52:22,690 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 00:52:22,776 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:53:52,320 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 00:53:53,542 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:53:53,559 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 00:53:53,593 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:53:53,614 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:53:53,618 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-10] GET request for /carts/0001
+2022-05-18 00:53:53,641 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:53:53,663 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:53:55,682 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 00:53:55,740 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:58:22,007 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 00:58:22,016 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 00:58:22,046 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:58:22,067 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 00:58:22,070 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 00:58:22,089 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:58:22,109 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:58:24,129 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 00:58:24,191 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 00:58:52,331 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:02:13,182 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:02:13,190 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 01:02:13,248 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:02:13,271 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:02:13,275 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 01:02:13,305 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:02:13,329 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:02:15,356 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 01:02:15,431 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:03:52,334 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:08:52,344 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:10:42,967 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:10:42,973 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 01:10:43,031 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:10:43,054 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:10:43,054 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 01:10:43,081 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:10:43,098 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:10:45,121 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 01:10:45,188 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:13:50,158 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:13:50,166 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 01:13:50,200 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:13:50,225 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:13:50,227 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 01:13:50,259 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:13:50,281 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:13:52,311 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 01:13:52,356 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:13:52,373 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:03,939 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:17:03,947 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 01:17:03,987 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:04,007 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:04,012 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-10] GET request for /carts/0001
+2022-05-18 01:17:04,040 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:04,056 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:06,077 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 01:17:06,145 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:57,718 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:17:57,738 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 01:17:57,770 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:57,794 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:17:57,797 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 01:17:57,828 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:57,846 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:17:59,862 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 01:17:59,924 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:18:52,364 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:19:38,321 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:19:38,332 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 01:19:38,375 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:19:38,398 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:19:38,403 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 01:19:38,434 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:19:38,456 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:19:40,483 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 01:19:40,540 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:20:45,206 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:20:45,216 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-10] GET request for /carts/0001
+2022-05-18 01:20:45,265 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:20:45,289 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:20:45,291 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 01:20:45,317 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:20:45,337 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:20:47,353 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 01:20:47,421 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:04,875 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:21:04,894 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 01:21:04,940 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:04,964 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:21:04,967 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 01:21:04,998 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:05,016 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:07,036 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-5] GET request for /carts/0001
+2022-05-18 01:21:07,101 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:40,991 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:21:41,012 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-3] GET request for /carts/0001
+2022-05-18 01:21:41,048 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:41,068 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:21:41,069 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-7] GET request for /carts/0001
+2022-05-18 01:21:41,104 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:41,123 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:43,141 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-8] GET request for /carts/0001
+2022-05-18 01:21:43,205 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:55,944 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:21:55,963 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-9] GET request for /carts/0001
+2022-05-18 01:21:55,996 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:56,022 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:21:56,024 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-10] GET request for /carts/0001
+2022-05-18 01:21:56,047 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:56,064 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:21:58,084 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-1] GET request for /carts/0001
+2022-05-18 01:21:58,148 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:22:41,804 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received Kafka message on topic: CART-CREATED with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=null)
+2022-05-18 01:22:41,827 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-2] GET request for /carts/0001
+2022-05-18 01:22:41,865 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:22:41,889 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0), CartLine(product=Product(productNumber=2), quantity=5, price=0.0)])
+2022-05-18 01:22:41,894 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-4] GET request for /carts/0001
+2022-05-18 01:22:41,919 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:22:41,939 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:22:43,965 INFO com.swa.application.controller.CartQueryController [http-nio-8008-exec-6] GET request for /carts/0001
+2022-05-18 01:22:44,031 INFO com.swa.application.integration.EventService [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Received Kafka message on topic: CHECKOUT-FOR-QUERY with payload: ShoppingCart(shoppingCartNumber=0001, cartLines=[CartLine(product=Product(productNumber=1), quantity=5, price=0.0)])
+2022-05-18 01:23:52,370 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-18 01:24:16,219 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringContextShutdownHook] Unregistering application SHOPPING-CART-QUERY-SERVICE with eureka with status DOWN
+2022-05-18 01:24:16,220 WARN com.netflix.discovery.DiscoveryClient$3 [SpringContextShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1652855056220, current=DOWN, previous=UP]
+2022-05-18 01:24:16,221 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING-CART-QUERY-SERVICE/DESKTOP-4JQFJ2O.mshome.net:shopping-cart-query-service:8008: registering service...
+2022-05-18 01:24:16,228 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING-CART-QUERY-SERVICE/DESKTOP-4JQFJ2O.mshome.net:shopping-cart-query-service:8008 - registration status: 204
+2022-05-18 01:24:16,529 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Revoke previously assigned partitions CART-DELETED-0
+2022-05-18 01:24:16,529 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Revoke previously assigned partitions CART-CREATED-0
+2022-05-18 01:24:16,529 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Revoke previously assigned partitions CART-UPDATED-0
+2022-05-18 01:24:16,530 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] query: partitions revoked: [CART-DELETED-0]
+2022-05-18 01:24:16,531 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] query: partitions revoked: [CART-CREATED-0]
+2022-05-18 01:24:16,531 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] query: partitions revoked: [CART-UPDATED-0]
+2022-05-18 01:24:16,532 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Member consumer-query-3-be0d8942-513d-415a-b3d8-3ed35fbf34d2 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-05-18 01:24:16,532 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Member consumer-query-2-7da57754-5384-4f5f-a0e2-7bbf9f7f8e15 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-05-18 01:24:16,532 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Member consumer-query-1-5f0e81a9-2b76-4268-b06d-f8312c403128 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-05-18 01:24:16,535 INFO org.apache.kafka.clients.consumer.KafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-query-2, groupId=query] Unsubscribed all topics or patterns and assigned partitions
+2022-05-18 01:24:16,535 INFO org.apache.kafka.clients.consumer.KafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-query-1, groupId=query] Unsubscribed all topics or patterns and assigned partitions
+2022-05-18 01:24:16,535 INFO org.apache.kafka.clients.consumer.KafkaConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-query-3, groupId=query] Unsubscribed all topics or patterns and assigned partitions
+2022-05-18 01:24:16,536 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Shutting down ExecutorService
+2022-05-18 01:24:16,536 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] Shutting down ExecutorService
+2022-05-18 01:24:16,536 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] Shutting down ExecutorService
+2022-05-18 01:24:16,569 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] query: Consumer stopped
+2022-05-18 01:24:16,569 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] query: Consumer stopped
+2022-05-18 01:24:16,575 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] query: Consumer stopped
+2022-05-18 01:24:16,579 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-18 01:24:16,593 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:22}] to localhost:27010 because the pool has been closed.
+2022-05-18 01:24:16,594 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:2, serverValue:21}] to localhost:27010 because the pool has been closed.
+2022-05-18 01:24:17,524 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Shutting down DiscoveryClient ...
+2022-05-18 01:24:20,538 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Unregistering ...
+2022-05-18 01:24:20,553 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] DiscoveryClient_SHOPPING-CART-QUERY-SERVICE/DESKTOP-4JQFJ2O.mshome.net:shopping-cart-query-service:8008 - deregister  status: 200
+2022-05-18 01:24:20,563 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Completed shut down of DiscoveryClient
